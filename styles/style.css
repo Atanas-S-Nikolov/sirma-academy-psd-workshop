@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --bg-color: #303030;
+    --primary-color: #e8631c;
+    font-family: "Oswald", sans-serif;
+}
+
+i {
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 80px;
+    background-color: inherit;
+    z-index: 1;
+    position: relative;
+}
+
+nav {
+    display: inherit;
+    gap: 1.5em;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.hero-section_paragraph {
+    font-family: "Montserrat";
+}
+
+.search-icon {
+    font-size: 30px;
+}
+
+.hero-section {
+    background-image: url(../assets/hero.svg);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 796px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 0;
+    margin-top: -112px;
+}
+
+.hero-section > div {
+    margin-left: 80px;
+    margin-bottom: 92px;
+    color: white;
+    width: 614px;
+}
+
+.hero-section > div p {
+    font-size: 30px;   
+}
+
+.hero-section .title {
+    font-size: 125px;
+    font-weight: 400;
+}
+
+#register-btn {
+    background-color: var(--primary-color);
+    margin-top: 44px;
+}
+
+.section {
+    text-align: center;
+    color: white;
+    padding-top: 104px;
+    padding-bottom: 100px;
+}
+
+.fancy-section {
+    background-color: var(--primary-color);
+}
+
+.section-title {
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Oswald";
+    margin-bottom: 59px;
+}
+
+.section-p {
+    font-size: 30px;
+    font-family: "Montserrat";
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    gap: 63px;
+    text-align: center;
+    margin-top: 83px;
+}
+
+.card {
+    width: 372px;
+    display: grid;
+    place-items: center;
+    gap: 0;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+
+.card-content {
+    padding: 37px 32px 32px 32px;
+}
+
+.card-content h3 {
+    font-size: 37px;
+    text-transform: uppercase;
+}
+
+.card-content p {
+    font-size: 22px;
+}
+
+.fancy-section .card {
+    background-color: var(--bg-color);
+    border-radius: 0px;
+}
+
+.section:not(.fancy-section) .card > img {
+    margin-top: 65px;
+}
+
+.card button {
+    margin-bottom: 28px;
+}
+
+.amazing-dance_section,
+.best-dance_section {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+}
+
+.section-img {
+    width: 100%;
+}
+
+.dance-section {
+    background-color: var(--primary-color);
+    padding-top: 320px;
+    padding-left: 85px;
+}
+
+.dance-section button {
+    margin-top: 80px;
+}
+
+.statistics-section {
+    padding-top: 204px;
+    padding-bottom: 0px;
+}
+
+.statistics {
+    display: flex;
+    gap: 210px;
+    justify-content: center;
+    margin-top: 190px;
+    margin-bottom: 270px;
+}
+
+.statistics div > h3 {
+    font-size: 67px;
+    margin-bottom: 20px;
+}
+
+.statistics div > h3::after {
+    content: "+";
+}
+
+.statistics div span {
+    font-size: 42px;
+    font-family: "Montserrat";
+}
+
+.quote-section {
+    background-image: url(../assets/quote-section-image.svg);
+    background-color: var(--primary-color);
+    background-blend-mode: multiply;
+    padding: 338px 267px 331px 267px;
+}
+
+.quote-section > p {
+    font-size: 50px;
+    font-family: "Nunito";
+}
+
+.quote-section h3 {
+    font-size: 58px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.subscribe-section {
+    padding-top: 135px;
+    padding-bottom: 163px;
+}
+
+.subscribe-inputs {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+#email-input {
+    width: 520px;
+    padding-left: 29px;
+}
+
+#subscribe-btn {
+    font-weight: 600;
+}

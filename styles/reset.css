@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    width: 1440px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, button, input {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    width: 323px;
+    height: 65px;
+    font-size: 29px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: white;
+    text-transform: uppercase;
+}
+
+input {
+    outline-width: 0px;
+    font-size: 25px;
+    height: 65px;
+    font-family: "Montserrat";
+}
