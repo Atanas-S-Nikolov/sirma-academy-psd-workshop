@@ -5,18 +5,19 @@
 :root {
     --bg-color: #303030;
     --primary-color: #e8631c;
+    --footer-list-gap: 48px;
+    --footer-list-line-height: 44px;
+    --footer-first-li-mb: 39px;
+    --footer-main-li-font-size: 33px;
+    --footer-main-li-mb: calc(var(--footer-first-li-mb) - (var(--footer-list-line-height) - var(--footer-main-li-font-size)) / 2);
     font-family: "Oswald", sans-serif;
-}
-
-i {
-    color: white;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 20px 80px;
+    justify-content: space-between;
+    padding: 20px 58px 20px 81px;
     background-color: inherit;
     z-index: 1;
     position: relative;
@@ -35,6 +36,8 @@ nav {
 
 .search-icon {
     font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
 
 .hero-section {
@@ -50,15 +53,14 @@ nav {
     margin-top: -112px;
 }
 
-.hero-section > div {
+.hero-section>div {
     margin-left: 80px;
     margin-bottom: 92px;
-    color: white;
     width: 614px;
 }
 
-.hero-section > div p {
-    font-size: 30px;   
+.hero-section>div p {
+    font-size: 30px;
 }
 
 .hero-section .title {
@@ -73,7 +75,6 @@ nav {
 
 .section {
     text-align: center;
-    color: white;
     padding-top: 104px;
     padding-bottom: 100px;
 }
@@ -130,7 +131,7 @@ nav {
     border-radius: 0px;
 }
 
-.section:not(.fancy-section) .card > img {
+.section:not(.fancy-section) .card>img {
     margin-top: 65px;
 }
 
@@ -143,7 +144,6 @@ nav {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(2, 1fr);
-    color: white;
 }
 
 .section-img {
@@ -173,12 +173,12 @@ nav {
     margin-bottom: 270px;
 }
 
-.statistics div > h3 {
+.statistics div>h3 {
     font-size: 67px;
     margin-bottom: 20px;
 }
 
-.statistics div > h3::after {
+.statistics div>h3::after {
     content: "+";
 }
 
@@ -194,7 +194,7 @@ nav {
     padding: 338px 267px 331px 267px;
 }
 
-.quote-section > p {
+.quote-section>p {
     font-size: 50px;
     font-family: "Nunito";
 }
@@ -224,4 +224,51 @@ nav {
 
 #subscribe-btn {
     font-weight: 600;
+}
+
+footer {
+    padding: 120px 56px 89px 56px;
+    display: grid;
+    grid-template-columns: 50% repeat(3, auto);
+}
+
+footer .first-ul {
+    margin-right: 177px;
+}
+
+footer ul ul a {
+    line-height: var(--footer-list-line-height);
+}
+
+footer .main-li.first-li {
+    margin-bottom: var(--footer-first-li-mb);
+}
+
+footer .main-li {
+    font-family: "Oswald";
+    font-size: var(--footer-main-li-font-size);
+    margin-bottom: var(--footer-main-li-mb);
+    text-transform: uppercase;
+}
+
+footer li {
+    font-family: "Montserrat";
+    font-size: 25px;
+}
+
+.social-media_section {
+    margin-top: 38px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-media_section a {
+   background-color: white;
+   color: var(--bg-color);
+   width: 44px;
+   height: 44px;
+   font-size: 28px;
+   border-radius: 50%;
+   display: grid;
+   place-items: center;   
 }
